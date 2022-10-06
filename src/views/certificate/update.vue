@@ -857,7 +857,7 @@ export default {
   }
 }
 
-/deep/.el-form-item__label {
+:deep(.el-form-item__label) {
   width: 80px !important;
   text-align: left;
   padding: 0;

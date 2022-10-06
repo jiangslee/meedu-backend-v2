@@ -284,7 +284,7 @@ export default {
 };
 </script>
 <style lang="less" scoped>
-/deep/.el-textarea__inner {
+:deep(.el-textarea__inner) {
   border-radius: 0 0 4px 4px;
 }
 .pre-icon {

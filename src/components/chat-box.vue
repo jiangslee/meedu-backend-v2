@@ -389,12 +389,12 @@ export default {
 };
 </script>
 <style lang="less" scoped>
-/deep/.input .el-input__inner {
+:deep(.input .el-input__inner) {
   height: 50px;
   border: none;
   padding-left: 0;
 }
-/deep/.input .el-input__inner:focus {
+:deep(.input .el-input__inner:focus) {
   border: none;
 }
 .el-dropdown {

@@ -216,13 +216,13 @@ export default {
   margin-top: 65px;
   margin-bottom: 80px;
 }
-/deep/.el-input__inner {
+:deep(.el-input__inner) {
   width: 380px;
   height: 48px;
   border-radius: 4px;
   border: 1px solid #e5e5e5;
 }
-/deep/.el-input__inner:focus {
+:deep(.el-input__inner:focus) {
   border: 1px solid #3ca7fa;
 }
 label.el-checkbox.rememberme {
@@ -244,7 +244,7 @@ label.el-checkbox.rememberme {
 }
 .input-short {
   width: 250px;
-  /deep/.el-input__inner {
+  :deep(.el-input__inner) {
     width: 250px;
     height: 48px;
     border-radius: 4px;
