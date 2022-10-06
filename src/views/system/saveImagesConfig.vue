@@ -27,7 +27,7 @@
               <div>
                 <el-input
                   class="w-200px"
-                  v-model="form.config['filesystems.disks.oss.access_id']"
+                  v-model="form.config['filesystems.disks.oss.access_key_id']"
                 ></el-input>
               </div>
             </div>
@@ -37,7 +37,7 @@
               <div>
                 <el-input
                   class="w-200px"
-                  v-model="form.config['filesystems.disks.oss.access_key']"
+                  v-model="form.config['filesystems.disks.oss.access_key_secret']"
                 ></el-input>
               </div>
             </div>
@@ -257,8 +257,8 @@ export default {
           "filesystems.disks.qiniu.access_key": null,
           "filesystems.disks.qiniu.secret_key": null,
           "filesystems.disks.qiniu.bucket": null,
-          "filesystems.disks.oss.access_id": null,
-          "filesystems.disks.oss.access_key": null,
+          "filesystems.disks.oss.access_key_id": null,
+          "filesystems.disks.oss.access_key_secret": null,
           "filesystems.disks.oss.bucket": null,
           "filesystems.disks.oss.endpoint": null,
           "filesystems.disks.oss.cdnDomain": null,
@@ -314,14 +314,14 @@ export default {
             this.form.config["filesystems.disks.qiniu.bucket"] =
               configData[index].value;
           } else if (
-            configData[index].key === "filesystems.disks.oss.access_id"
+            configData[index].key === "filesystems.disks.oss.access_key_id"
           ) {
-            this.form.config["filesystems.disks.oss.access_id"] =
+            this.form.config["filesystems.disks.oss.access_key_id"] =
               configData[index].value;
           } else if (
-            configData[index].key === "filesystems.disks.oss.access_key"
+            configData[index].key === "filesystems.disks.oss.access_key_secret"
           ) {
-            this.form.config["filesystems.disks.oss.access_key"] =
+            this.form.config["filesystems.disks.oss.access_key_secret"] =
               configData[index].value;
           } else if (configData[index].key === "filesystems.disks.oss.bucket") {
             this.form.config["filesystems.disks.oss.bucket"] =
